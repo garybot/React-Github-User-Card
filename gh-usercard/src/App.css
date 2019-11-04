@@ -6,7 +6,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -14,9 +14,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: ivory;
 }
 
 .App-link {
   color: #09d3ac;
+}
+.followers-list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.followers-list a {
+  /*text-decoration: none;*/
+  color: ivory;
 }
