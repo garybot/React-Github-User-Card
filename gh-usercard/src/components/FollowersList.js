@@ -1,6 +1,7 @@
 import React from 'react';
+import FollowerCard from './FollowerCard.js';
 
-const Followers = (props) => {
+const FollowersList = (props) => {
   return (
     <div>
       <h2>Followers</h2>
@@ -8,10 +9,7 @@ const Followers = (props) => {
       {
         props.followers.map(user => {
           return (
-            <a href={user.url} key={user.id}>
-              <img src={user.avatar_url} alt={user.login} />
-              <h2>{user.login}</h2>
-            </a>
+            <FollowerCard user={user} />
           )
         })
       }
@@ -19,4 +17,4 @@ const Followers = (props) => {
     </div>
   )
 }
-export default Followers
+export default FollowersList

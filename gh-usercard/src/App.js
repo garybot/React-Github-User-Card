@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import Card from './components/Card.js';
-import Followers from './components/Followers.js'
+import UserCard from './components/UserCard.js';
+import FollowersList from './components/FollowersList.js'
 
 class App extends React.Component {
   constructor() {
@@ -41,8 +41,8 @@ class App extends React.Component {
         <h1>GH-UserCard</h1>
         </header>
         <main>
-          <Card user={this.state.user}/>
-          <Followers followers={this.state.followers}/>
+          <UserCard user={this.state.user}/>
+          <FollowersList followers={this.state.followers}/>
         </main>
       </div>
     );

@@ -20,11 +20,32 @@
 .App-link {
   color: #09d3ac;
 }
+.user-card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.user-details{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.avatar {
+  max-width: 50%;
+}
+.follower-card {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.follower-avatar {
+  max-width: 20%;
+}
+
 .followers-list {
   padding: 0;
   list-style: none;
   text-align: center;
 }
+
 .followers-list a {
   /*text-decoration: none;*/
   color: ivory;
