@@ -9,7 +9,7 @@ const FollowersList = (props) => {
       {
         props.followers.map(user => {
           return (
-            <FollowerCard key={user.id} user={user} />
+            <FollowerCard key={user.id} user={user} changeUser={props.changeUser}/>
           )
         })
       }

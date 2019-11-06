@@ -11,6 +11,7 @@ const UserCard = (props) => {
         <h1>{user.name}</h1>
         <p>{user.location}</p>
         <p>{user.bio}</p>
+        <a href={user.html_url}>{user.html_url}</a>
       </div>
     </div>
   );
