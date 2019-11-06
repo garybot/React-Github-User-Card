@@ -20,10 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+.card-section {
+  width: 80%;
+}
 .user-card {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #1c1d27;
 }
 .user-details{
   display: flex;
@@ -31,19 +38,32 @@
 }
 .avatar {
   max-width: 50%;
-}
-.follower-card {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.follower-avatar {
-  max-width: 20%;
+  border-radius: 8px;
 }
 
 .followers-list {
+  display: flex;
+  flex-flow: row wrap;
   padding: 0;
   list-style: none;
   text-align: center;
+}
+.follower-card {
+  background-color: #1c1d27;
+  width: 45%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.follower-details {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.follower-avatar {
+  max-width: 20%;
+  border-radius: 8px;
 }
 
 .followers-list a {

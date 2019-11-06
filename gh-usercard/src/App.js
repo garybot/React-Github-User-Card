@@ -37,10 +37,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-        <h1>GH-UserCard</h1>
-        </header>
-        <main>
+        <main className="card-section">
           <UserCard user={this.state.user}/>
           <FollowersList followers={this.state.followers}/>
         </main>
